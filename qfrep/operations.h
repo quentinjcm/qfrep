@@ -11,4 +11,8 @@
 
 #include <stdio.h>
 
+int frepUnion(int a, int b);
+
+int frepIntersection(int a, int b);
+
 #endif /* defined(__qfrep__operations__) */

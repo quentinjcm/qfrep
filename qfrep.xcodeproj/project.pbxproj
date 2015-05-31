@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		66820ED91B1AFCB8004A629F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66820ED81B1AFCB8004A629F /* main.cpp */; };
+		66820EE01B1AFD58004A629F /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66820EDF1B1AFD58004A629F /* SDL2.framework */; };
+		66820EE21B1AFD73004A629F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66820EE11B1AFD73004A629F /* OpenGL.framework */; };
+		66820EE81B1B0BDD004A629F /* SDLGraphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66820EE61B1B0BDD004A629F /* SDLGraphics.cpp */; };
+		66F087E81B1B1E3D0072DB89 /* primatives.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66F087E61B1B1E3D0072DB89 /* primatives.cpp */; };
+		66F087F41B1B43E60072DB89 /* PCRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66F087F21B1B43E60072DB89 /* PCRenderer.cpp */; };
+		66F087F71B1B6AF10072DB89 /* operations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66F087F51B1B6AF10072DB89 /* operations.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,16 @@
 /* Begin PBXFileReference section */
 		66820ED51B1AFCB8004A629F /* qfrep */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = qfrep; sourceTree = BUILT_PRODUCTS_DIR; };
 		66820ED81B1AFCB8004A629F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		66820EDF1B1AFD58004A629F /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		66820EE11B1AFD73004A629F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		66820EE61B1B0BDD004A629F /* SDLGraphics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SDLGraphics.cpp; sourceTree = "<group>"; };
+		66820EE91B1B0CBF004A629F /* SDLGraphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDLGraphics.h; sourceTree = "<group>"; };
+		66F087E61B1B1E3D0072DB89 /* primatives.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = primatives.cpp; sourceTree = "<group>"; };
+		66F087E71B1B1E3D0072DB89 /* primatives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = primatives.h; sourceTree = "<group>"; };
+		66F087F21B1B43E60072DB89 /* PCRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PCRenderer.cpp; sourceTree = "<group>"; };
+		66F087F31B1B43E60072DB89 /* PCRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCRenderer.h; sourceTree = "<group>"; };
+		66F087F51B1B6AF10072DB89 /* operations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = operations.cpp; sourceTree = "<group>"; };
+		66F087F61B1B6AF10072DB89 /* operations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = operations.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66820EE21B1AFD73004A629F /* OpenGL.framework in Frameworks */,
+				66820EE01B1AFD58004A629F /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +59,8 @@
 		66820ECC1B1AFCB8004A629F = {
 			isa = PBXGroup;
 			children = (
+				66820EE11B1AFD73004A629F /* OpenGL.framework */,
+				66820EDF1B1AFD58004A629F /* SDL2.framework */,
 				66820ED71B1AFCB8004A629F /* qfrep */,
 				66820ED61B1AFCB8004A629F /* Products */,
 			);
@@ -58,6 +78,14 @@
 			isa = PBXGroup;
 			children = (
 				66820ED81B1AFCB8004A629F /* main.cpp */,
+				66F087F21B1B43E60072DB89 /* PCRenderer.cpp */,
+				66F087F31B1B43E60072DB89 /* PCRenderer.h */,
+				66F087E61B1B1E3D0072DB89 /* primatives.cpp */,
+				66F087E71B1B1E3D0072DB89 /* primatives.h */,
+				66F087F51B1B6AF10072DB89 /* operations.cpp */,
+				66F087F61B1B6AF10072DB89 /* operations.h */,
+				66820EE61B1B0BDD004A629F /* SDLGraphics.cpp */,
+				66820EE91B1B0CBF004A629F /* SDLGraphics.h */,
 			);
 			path = qfrep;
 			sourceTree = "<group>";
@@ -119,6 +147,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				66820ED91B1AFCB8004A629F /* main.cpp in Sources */,
+				66F087F41B1B43E60072DB89 /* PCRenderer.cpp in Sources */,
+				66F087E81B1B1E3D0072DB89 /* primatives.cpp in Sources */,
+				66F087F71B1B6AF10072DB89 /* operations.cpp in Sources */,
+				66820EE81B1B0BDD004A629F /* SDLGraphics.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +234,10 @@
 		66820EDD1B1AFCB8004A629F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -209,6 +245,10 @@
 		66820EDE1B1AFCB8004A629F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -232,6 +272,7 @@
 				66820EDE1B1AFCB8004A629F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
